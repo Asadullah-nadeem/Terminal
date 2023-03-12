@@ -49,7 +49,7 @@ commandInput.addEventListener('keydown', function(event) {
 				commandInput.value = '';
 			}
 		}
-		xhr.open('GET', `https://api.chucknorris.io/jokes/random?category=${args[0]}`, true);
+		xhr.open('GET', `https://asadullah-nadeem.github.io/Terminal/main/api.json?members=${args[0]}`, true);
 		xhr.send();
 
 		// // Add another line of code here
