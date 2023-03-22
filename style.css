@@ -1,38 +1,68 @@
-*::after,
-*::before,
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-	background-color: black;
-	color: #00ff00;
-	font-family: monospace;
-  height: 100%;
-  position: relative;
+  background: #000000;
 }
 
-#terminal {
-	border: #2b8b23;
+.ter {
+  font-family: 'Ubuntu Mono', monospace;
+  color: #37f;
+  font-size: 16px;
+  font-weight: 100;
+}
+#mdkld{
+  color: #ff0000;
+}
+.terminal-input {
+  background: rgba(0, 0, 0, 0);
+  font-family: monospace;
+  color: transparent;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  -webkit-text-fill-color: rgb(187,187,187);
 }
 
-#prompt {
-	margin-bottom: 10px;
-  height: 100%;
-  position: relative;
-  
+.terminal-purple {
+  color: #523050f2;
+
 }
 
-#command {
-	background-color: black;
-	color: #00ff00;
-	border: 0px solid #00ff00;
-	outline: 0px solid #00ff00;
- 
+.console-line {
+  color: rgb(53 167 53);
 }
 
-#output {
-	height: 638px;
-	overflow: auto;
+.login-line {
+  color: #fff;
+}
+
+.console-carrot {
+  vertical-align: middle;
+  background: #ff0000;
+  height: 20px;
+  width: 1px;
+  margin-left: -18px;
+  display: inline-block;
+  -webkit-animation: blink 1s step-start 0s infinite;
+          animation: blink 1s step-start 0s infinite;
+}
+
+::-moz-selection {
+  background-color: #fff;
+  color: #000;
+}
+
+::selection {
+  background-color: #ffffff60;
+  color: #000;
+}
+
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
 }
